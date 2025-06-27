@@ -20,7 +20,7 @@ export default function LocationSlider() {
     },
     {
       id: 4,
-      name: "Quatar",
+      name: "Qatar",
       icon: "/icons/country/quatar.svg",
     },
     {

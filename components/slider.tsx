@@ -84,7 +84,7 @@ export default function Slider({ sliders, title, className }: SliderProps) {
                     className={cn(
                       `
                 w-full rounded-2xl flex  gap-2 items-center justify-center p-2 mb-3 
-                transition-all duration-200 group-hover:-translate-y-1 group-hover:border-b-8 group-hover:border-purple-100 
+                transition-all duration-200 group-hover:-translate-y-1 group-hover:shadow-[0px_19px_7px_-5px_#a196ff]
                 bg-[#F4F6FF]
               `,
                       className
