@@ -10,7 +10,7 @@ export default function TopBar() {
           {/* phone number  */}
           <div className="flex gap-2 items-center">
             <Image
-              src={"/icons/telephone.svg"}
+              src={"/icons/nav-header/telephone.svg"}
               alt="telephone"
               height={20}
               width={20}
@@ -21,7 +21,7 @@ export default function TopBar() {
           {/* email  */}
           <div className="flex gap-2 items-center">
             <Image
-              src={"/icons/envelope.svg"}
+              src={"/icons/nav-header/envelope.svg"}
               alt="envelope"
               height={20}
               width={20}
@@ -35,7 +35,7 @@ export default function TopBar() {
         <div className="flex gap-4">
           {/* instagram  */}
           <Image
-            src={"/icons/instagram.svg"}
+            src={"/icons/nav-header/instagram.svg"}
             alt="envelope"
             height={20}
             width={24}
@@ -43,7 +43,7 @@ export default function TopBar() {
 
           {/* linkedin  */}
           <Image
-            src={"/icons/linkedin.svg"}
+            src={"/icons/nav-header/linkedin.svg"}
             alt="envelope"
             height={20}
             width={24}

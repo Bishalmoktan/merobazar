@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function SearchInput() {
   return (
-    <form className="flex w-full max-w-[800px]">
+    <form className="flex w-full max-w-[650px]">
       <div className="w-full flex">
         <input
           type="text"
@@ -14,7 +14,7 @@ export default function SearchInput() {
           className="px-5 py-2.5 bg-primary border border-l-0 rounded-r-full hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <Image
-            src={"/icons/magnifying-glass.svg"}
+            src={"/icons/nav-header/magnifying-glass.svg"}
             alt="Search"
             width={20}
             height={20}

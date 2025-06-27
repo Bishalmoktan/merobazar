@@ -20,7 +20,7 @@ export default function UserProfile() {
   return (
     <DropdownMenu onOpenChange={setIsOpen}>
       <DropdownMenuTrigger asChild onClick={() => setIsOpen(true)}>
-        <div className="flex gap-2 items-center bg-secondary rounded-full p-2">
+        <div className="flex gap-2 items-center bg-secondary rounded-full p-2 cursor-pointer">
           <Avatar className="size-10">
             <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
             <AvatarFallback>CN</AvatarFallback>

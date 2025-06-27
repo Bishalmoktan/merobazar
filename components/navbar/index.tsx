@@ -10,20 +10,20 @@ export default function Navbar() {
     <nav className="max-sm:px-2 px-14 max-w-[1400px] mx-auto flex justify-between py-2 gap-16 items-center">
       {/* MeroBazar logo */}
       <Image
-        src={"/icons/merobazar-logo.svg"}
+        src={"/icons/nav-header/merobazar-logo.svg"}
         alt="MeroBazar logo"
         width={100}
         height={60}
         className="w-28 h-10"
       />
-      <div className="flex gap-2 flex-1 items-center h-full">
+      <div className="flex gap-6 flex-1 items-center h-[40px] mt-4">
         {/* Search Input box  */}
         <SearchInput />
 
         {/* Create new Product  */}
         <Button className="rounded-full py-5">
           <Image
-            src={"/icons/square-plus.svg"}
+            src={"/icons/nav-header/square-plus.svg"}
             alt="Plus"
             width={20}
             height={20}
@@ -32,10 +32,11 @@ export default function Navbar() {
         </Button>
 
         <Separator orientation="vertical" className="bg-[#BDBDBD]" />
+
         <div className="flex gap-4 items-center">
           {/* Cart  */}
           <Image
-            src={"/icons/cart.svg"}
+            src={"/icons/nav-header/cart.svg"}
             alt="Plus"
             width={25}
             height={20}
@@ -44,7 +45,7 @@ export default function Navbar() {
 
           {/* Chat  */}
           <Image
-            src={"/icons/chat.svg"}
+            src={"/icons/nav-header/chat.svg"}
             alt="Plus"
             width={25}
             height={20}

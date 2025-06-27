@@ -1,4 +1,8 @@
+import AutoCarousel from "@/components/auto-carousel";
+import CategorySlider from "@/components/category-slider";
+import LocationSlider from "@/components/location-slider";
 import Navbar from "@/components/navbar";
+import NavigationLinks from "@/components/navigation-links";
 import TopBar from "@/components/top-bar";
 
 export default function Home() {
@@ -6,6 +10,12 @@ export default function Home() {
     <>
       <TopBar />
       <Navbar />
+      <NavigationLinks />
+      <AutoCarousel />
+      <main>
+        <CategorySlider />
+        <LocationSlider />
+      </main>
     </>
   );
 }
