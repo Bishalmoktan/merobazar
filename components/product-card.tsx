@@ -40,7 +40,7 @@ export default function ProductCard({
   return (
     <div
       key={id}
-      className="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-[0px_19px_7px_-5px_#a196ff] hover:-translate-y-1 transition-all duration-300"
+      className="bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-[0px_19px_7px_-5px_#a196ff] hover:-translate-y-1 transition-all duration-300"
     >
       <div className="relative">
         <Image
