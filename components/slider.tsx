@@ -97,7 +97,7 @@ export default function Slider({ sliders, title, className }: SliderProps) {
                       height={40}
                       className="transition-transform duration-200 group-hover:scale-110"
                     />
-                    <h3 className="text-semibold font-medium text-[#7C7C7C] text-center group-hover:text-[#7F7F7F] transition-colors duration-200">
+                    <h3 className="hidden md:block text-semibold font-medium text-[#7C7C7C] text-center group-hover:text-[#7F7F7F] transition-colors duration-200">
                       {slider.name}
                     </h3>
                   </div>

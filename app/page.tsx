@@ -1,5 +1,6 @@
 import AutoCarousel from "@/components/auto-carousel";
 import CategorySlider from "@/components/category-slider";
+import Footer from "@/components/footer";
 import LocationSlider from "@/components/location-slider";
 import Navbar from "@/components/navbar";
 import NavigationLinks from "@/components/navigation-links";
@@ -26,6 +27,7 @@ export default function Home() {
           <RecentlyUploadedProducts />
         </main>
       </div>
+      <Footer />
     </>
   );
 }

@@ -58,28 +58,32 @@ const links: ILinks[] = [
 export default function NavigationLinks() {
   return (
     <nav className="bg-[#F5F5F5]">
-      <div className="max-sm:px-2 px-14 max-w-[1400px] mx-auto flex justify-evenly py-4 mt-4">
-        {links.map((link) => {
-          if (link.dropdown.length) {
-            return (
+      <div className="max-sm:px-2 px-14 max-w-[1400px] mx-auto py-4 mt-4 overflow-x-auto no-scrollbar">
+        <div className="flex justify-evenly max-sm:justify-start max-sm:gap-6 flex-wrap max-sm:flex-nowrap min-w-max">
+          {links.map((link) =>
+            link.dropdown.length ? (
               <DropdownLink
                 dropdownLinks={link.dropdown}
                 label={link.label}
                 icon={link.icon}
                 key={link.label}
               />
-            );
-          }
-          return (
-            <div
-              key={link.label}
-              className="flex gap-2 items-center font-semibold"
-            >
-              <Image src={link.icon} alt={link.label} width={20} height={20} />
-              <span>{link.label}</span>
-            </div>
-          );
-        })}
+            ) : (
+              <div
+                key={link.label}
+                className="flex gap-2 items-center font-semibold shrink-0"
+              >
+                <Image
+                  src={link.icon}
+                  alt={link.label}
+                  width={20}
+                  height={20}
+                />
+                <span>{link.label}</span>
+              </div>
+            )
+          )}
+        </div>
       </div>
     </nav>
   );

@@ -26,7 +26,7 @@ export default function UserProfile() {
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
 
-          <div className="max-w-[110px]">
+          <div className="hidden md:block max-w-[110px]">
             <h3 className="text-base font-bold">Ashim Kafle</h3>
             <p className="text-sm truncate max-w-full overflow-hidden text-ellipsis whitespace-nowrap">
               ashimkafle22@gmail.com
@@ -34,7 +34,7 @@ export default function UserProfile() {
           </div>
 
           <ChevronDown
-            className={`w-4 h-4 text-gray-400 transition-transform duration-200 ${
+            className={`w-4 h-4 text-gray-400 transition-transform duration-200 hidden md:block ${
               isOpen ? "rotate-180" : ""
             }`}
           />

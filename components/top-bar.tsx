@@ -6,7 +6,7 @@ export default function TopBar() {
     <header className="bg-primary text-white">
       <div className="max-sm:px-2 px-14 max-w-[1400px] mx-auto flex justify-between font-bold py-1">
         {/* contact info  */}
-        <div className="flex gap-4">
+        <div className="flex flex-col md:flex-row gap-1 md:gap-4">
           {/* phone number  */}
           <div className="flex gap-2 items-center">
             <Image
@@ -32,13 +32,14 @@ export default function TopBar() {
           </div>
         </div>
         {/* social media other links  */}
-        <div className="flex gap-4">
+        <div className="flex gap-4 items-center">
           {/* instagram  */}
           <Image
             src={"/icons/nav-header/instagram.svg"}
             alt="envelope"
             height={20}
             width={24}
+            className="size-8 md:size-6"
           />
 
           {/* linkedin  */}
@@ -47,12 +48,13 @@ export default function TopBar() {
             alt="envelope"
             height={20}
             width={24}
+            className="size-8 md:size-6"
           />
 
-          <Link href={"#"} className="underline">
+          <Link href={"#"} className="underline hidden md:block">
             terms & condition
           </Link>
-          <Link href={"#"} className="underline">
+          <Link href={"#"} className="underline hidden md:block ">
             privacy policy
           </Link>
         </div>

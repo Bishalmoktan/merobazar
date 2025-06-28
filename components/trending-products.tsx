@@ -119,11 +119,11 @@ const products = [
 export default function TrendingProducts() {
   return (
     <div>
-      <div className="flex items-center justify-end mb-8">
+      <div className="flex items-center justify-center md:justify-end mb-8">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
             <Select defaultValue="featured">
-              <SelectTrigger className="w-52 text-lg rounded-full bg-white py-6 px-4 shadow-2xl">
+              <SelectTrigger className="w-44 md:w-52 text-base md:text-lg rounded-full bg-white py-6 px-4 shadow-2xl">
                 <span className="">Sort By:</span>
 
                 <SelectValue />
@@ -138,7 +138,7 @@ export default function TrendingProducts() {
           </div>
 
           <Select defaultValue="all">
-            <SelectTrigger className="w-52 text-lg rounded-full bg-white py-6 px-4 shadow-2xl">
+            <SelectTrigger className="w-44 md:w-52 text-base md:text-lg rounded-full bg-white py-6 px-4 shadow-2xl">
               <SelectValue placeholder="All Categories" />
             </SelectTrigger>
             <SelectContent>
