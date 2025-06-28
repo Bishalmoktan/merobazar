@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar";
 import NavigationLinks from "@/components/navigation-links";
 import RecentlyUploadedProducts from "@/components/recently-upload-products";
 import RecommendedProducts from "@/components/recommended-products";
+import StickyChat from "@/components/sticky-chat";
 import TopBar from "@/components/top-bar";
 import TrendingProducts from "@/components/trending-products";
 
@@ -28,6 +29,8 @@ export default function Home() {
         </main>
       </div>
       <Footer />
+
+      <StickyChat />
     </>
   );
 }
